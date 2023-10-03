@@ -41,6 +41,7 @@ fun RatingWidget(
         starPath.getBounds()
     }
 
+    //Row of stars
     Row(
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(spaceBetween)
@@ -80,6 +81,7 @@ fun RatingWidget(
 }
 
 
+//Method to calculate stars
 @Composable
 private fun calculateStars(rating: Double): Map<String, Int> {
     val maxStars by remember { mutableStateOf(5) }
@@ -123,6 +125,7 @@ private fun calculateStars(rating: Double): Map<String, Int> {
 
 }
 
+//It will return total filled starts
 @Composable
 private fun FilledStar(
     starPath: Path,
@@ -151,6 +154,8 @@ private fun FilledStar(
 
 }
 
+
+//It will return half filled starts
 
 @Composable
 private fun HalfFilledStar(
@@ -189,6 +194,8 @@ private fun HalfFilledStar(
 
 }
 
+
+//It will return total empty starts
 
 @Composable
 private fun EmptyStar(
