@@ -73,7 +73,7 @@ class MainActivity : ComponentActivity() {
 
                     Spacer(modifier = Modifier.size(20.dp))
 
-                    // Rating Widget
+                    // Rating Widget composeable
                     RatingWidget(
                         modifier = Modifier.padding(5.dp),
                         rating = rating
